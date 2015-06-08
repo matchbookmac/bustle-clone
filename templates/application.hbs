@@ -11,15 +11,16 @@
   <div id="myCarousel" class="carousel slide">
 
     <p>
-      <button type="button" class="btn-default btn-lg carousel-btn left-btn">
+      <button type="button" class="btn-default btn-lg carousel-btn left-btn" {{action 'slideLeft'}}>
         <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
       </button>
-      <img src="http://i.ytimg.com/vi/II1wEGje7m8/maxresdefault.jpg" alt="people in the fields" class="img-responsive center-block"/>
-      <button type="button" class="btn-default btn-lg carousel-btn right-btn">
+      <img src="http://i.ytimg.com/vi/II1wEGje7m8/maxresdefault.jpg" alt="people in the fields" class="img-responsive center-block carousel-img" id='slide0'/>
+      <img src="http://www.newyorkfamily.com/wp-content/uploads/2013/07/Moreys-Piers-Waterparks-2-1024x726.jpg" class="img-responsive center-block carousel-img" id='slide1'>
+      <img src="http://goodlifepermaculture.com.au/wp-content/uploads/2014/11/carrot-fest.jpg" class="img-responsive center-block carousel-img" id='slide2'>
+      <button type="button" class="btn-default btn-lg carousel-btn right-btn" {{action 'slideRight'}}>
         <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
       </button>
     </p>
   </div>
   {{outlet}}
 </div>
-<!-- http://goodlifepermaculture.com.au/wp-content/uploads/2014/11/carrot-fest.jpg -->

@@ -31,6 +31,10 @@ h3 span {
   background-color: red;
 }*/
 
+#slide1, #slide2 {
+  display: none;
+}
+
 .carousel {
    position: relative;
 }
