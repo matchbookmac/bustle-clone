@@ -14,7 +14,7 @@
 h3 {
   position: absolute;
   top: 200px;
-  left: 0;
+  left: 128px;
   width: 100%;
 }
 
@@ -27,9 +27,31 @@ h3 span {
    padding: 10px;
 }
 
-/*.glyphicon {
-  background-color: red;
-}*/
+.ratio-4-3{
+  width:100%;
+  position:relative;
+  background:50% 50% no-repeat;
+  background-size:cover;
+  background-clip:content-box;
+}
+
+.ratio-4-3:before{
+  display:block;
+  content:"";
+  padding-top:40%;
+}
+
+#slide0 {
+  background-image: url(http://i.ytimg.com/vi/II1wEGje7m8/maxresdefault.jpg);
+}
+
+#slide1 {
+  background-image: url(http://www.newyorkfamily.com/wp-content/uploads/2013/07/Moreys-Piers-Waterparks-2-1024x726.jpg);
+}
+
+#slide2 {
+  background-image: url(http://goodlifepermaculture.com.au/wp-content/uploads/2014/11/carrot-fest.jpg);
+}
 
 #slide1, #slide2 {
   display: none;
