@@ -6,11 +6,17 @@
       <li><a href="#">Yesterday</a></li>
       <li><a href="#">Yesteryear</a></li>
       <li><a href="#">Da Fuuuuuture</a></li>
+      <li><a href="#"><span {{action "toggleSocialIcons" on="mouseLeave"}}><span class="fi-social-twitter" {{action "toggleSocialIcons" on="mouseEnter"}}></span></span></a></li>
+      {{#if mouseIsOver}}
+        <li><a href="#">Twitter</a></li>
+      {{/if}}
+
     </ul>
   </nav>
   <div id="myCarousel" class="carousel slide">
 
     <p>
+      <!-- <img {{bind-attr src=imgURL}}> -->
       <div class="img-responsive center-block carousel-img ratio-4-3" id='slide0'></div>
       <div class="img-responsive center-block carousel-img ratio-4-3" id='slide1'></div>
       <div class="img-responsive center-block carousel-img ratio-4-3" id='slide2'></div>
